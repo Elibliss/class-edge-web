@@ -1,19 +1,22 @@
 import { Link, useLocation } from 'react-router-dom';
 import contactImg from '../assets/images/contact-us-abstract-concept-vector-illustration_107173-28778 1.png'; // Using this or similar for the contact illustration
 import logo from '../assets/images/logo.png'; // Logo for footer
-import termsDoc from '../assets/Class Edge Terms Of Service.docx';
+import TermsOfServiceModal from './TermsOfServiceModal';
+import { useState } from 'react';
 
 export default function Footer() {
   const location = useLocation();
   const isContactPage = location.pathname === '/contact';
+  const [showTerms, setShowTerms] = useState(false);
 
   return (
-    <footer className={`bg-black text-white ${isContactPage ? 'pt-12' : 'pt-32'} pb-12 relative mt-32`}>
+    <footer className={`bg-black text-white ${isContactPage ? 'pt-20 md:pt-12' : 'pt-44 md:pt-32'} pb-12 relative mt-32`}>
+      <TermsOfServiceModal open={showTerms} onClose={() => setShowTerms(false)} />
       
       {/* Reach Out Card - Overlapping the top (Hidden on Contact Page) */}
       {!isContactPage && (
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl px-4">
-          <div className="bg-[#00153B] rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between overflow-hidden relative">
+          <div className="bg-[#00153B] rounded-3xl p-8 md:p-12 shadow-2xl flex flex-cols-3 md:flex-row items-center justify-between overflow-hidden relative">
              
              {/* Left Content */}
              <div className="z-10 md:w-1/2 space-y-6">
@@ -41,7 +44,7 @@ export default function Footer() {
       )}
 
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-28 md:mt-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
           
           {/* Column 1: Brand & Address */}
@@ -94,7 +97,15 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-6">Legal</h4>
             <ul className="space-y-4 text-gray-400">
-              <li><a href={termsDoc} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Terms Of Service</a></li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => setShowTerms(true)}
+                  className="hover:text-white transition text-left"
+                >
+                  Terms Of Service
+                </button>
+              </li>
               <li><a href="#" className="hover:text-white transition">Privacy Policies</a></li>
               <li><a href="#" className="hover:text-white transition">Cookie Policy</a></li>
             </ul>

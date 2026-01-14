@@ -31,9 +31,24 @@ export default function HowItWorks() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Card 1: Academic Insight */}
+          <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 flex flex-col h-full">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="">
+                {/* Graduation Cap Icon SVG */}
+                <img className="w-35 h-35" src={Accdcon} alt="icon" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900">Academic Insight</h4>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-6 flex-grow">
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Teachers upload academic results into the system, which analyzes performance across subjects and terms and shares role-based insights with admins, teachers, and parents to ensure timely academic intervention.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 flex flex-col h-full">
             <div className="flex items-center gap-4 mb-8">
               <div className="">

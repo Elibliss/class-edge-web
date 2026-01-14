@@ -14,15 +14,15 @@ export default function WhatClassEdgeDoes() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-xl border border-blue-100/40 p-8 md:p-12 relative overflow-hidden">
-            <div className="relative z-10 flex flex-col items-center text-center mb-10">
+            <div className="relative z-20 flex flex-col items-center text-center mb-10">
               <div className="flex gap-3">
                 <img src={iconE} alt="" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Track Students Attendance</h2>
               </div>
               <p className="text-gray-600 text-[15px] w-30">Monitor daily attendance, spot trends, and receive alerts on absences</p>
             </div>
-            <img src={groupImg} alt="" className="absolute left-1/2 -translate-x-1/2 top-6 w-[560px] md:w-[600px] object-contain pointer-events-none select-none" />
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 mt-40">
+            <img src={groupImg} alt="" className="absolute left-1/2 -translate-x-1/2 top-24 w-[560px] md:w-[600px] object-contain pointer-events-none select-none" />
+            <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 mt-40">
               <div className="bg-white rounded-2xl shadow-lg ring-1 ring-blue-100 p-8 md:p-10 text-left space-y-3">
                 <div className="flex items-center gap-3">
                   <h2 className="font-bold text-[#003FA6] text-[22px] md:text-[26px]">Real-Time Attendance Monitoring</h2>
@@ -49,15 +49,15 @@ export default function WhatClassEdgeDoes() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-xl border border-blue-100/40 p-8 md:p-12 relative overflow-hidden">
-            <div className="relative z-30 flex flex-col items-center text-center mb-10">
+            <div className="relative z-20 flex flex-col items-center text-center mb-10">
               <div className=" flex gap-3">
                 <img src={iconC} alt="" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Analyze Students Performance</h2>
               </div>
               <p className="text-gray-600 text-[15px] w-30 ">Gain clear insight into scores, growth trends and areas needing improvemen</p>
             </div>
-            <img src={notebookImg} alt="" className="absolute left-1/2 -translate-x-1/2 top-6 w-[420px] md:w-[560px] object-contain pointer-events-none select-none" />
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 mt-40">
+            <img src={notebookImg} alt="" className="absolute left-1/2 -translate-x-1/2 top-24 w-[420px] md:w-[560px] object-contain pointer-events-none select-none" />
+            <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 mt-40">
               <div className="bg-white rounded-2xl shadow-lg ring-1 ring-blue-100 p-8 md:p-10 text-left space-y-3">
                 <div className="flex items-center gap-3">
                   <h2 className="font-bold text-[#003FA6] text-[22px] md:text-[26px]">Clear Performance Tracking</h2>
@@ -84,15 +84,15 @@ export default function WhatClassEdgeDoes() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-xl border border-blue-100/40 p-8 md:p-12 relative overflow-hidden">
-            <div className="relative z-10 flex flex-col items-center text-center mb-10">
+            <div className="relative z-20 flex flex-col items-center text-center mb-10">
               <div className="flex gap-3">
                 <img src={iconD} alt="" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Your Direct Line to the Classroom</h2>
               </div>
               <p className="text-gray-600 text-[15px] w-30">Easy-to-read reports turn raw scores into meaningful insight</p>
             </div>
-            <img src={msgImg} alt="" className="absolute left-1/2 -translate-x-1/2 top-6 w-[420px] md:w-[560px] object-contain pointer-events-none select-none" />
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 mt-40">
+            <img src={msgImg} alt="" className="absolute left-1/2 -translate-x-1/2 top-24 w-[420px] md:w-[560px] object-contain pointer-events-none select-none" />
+            <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 mt-40">
               <div className="bg-white rounded-2xl shadow-lg ring-1 ring-blue-100 p-8 md:p-10 text-left space-y-3">
                 <div className="flex items-center gap-3">
                   <h2 className="font-bold text-[#003FA6] text-[22px] md:text-[26px]">Real-Time Parent-Teacher Messaging</h2>
